@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import RightNav from './RightNav';
 import styled from 'styled-components';
+import enedis from '../assets/enedis.png';
 
 const StyledBurger = styled.div`
     width: 2rem;
@@ -46,6 +47,7 @@ const Burger = () => {
         <div />
         <div />
       </StyledBurger>
+      {/* <img className='logoEnedis' src={enedis} alt='logo' /> */}
       <RightNav open={open} />
     </>
   );
