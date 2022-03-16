@@ -1,0 +1,7 @@
+.navbarWrap {
+  display: flex;
+  align-items: center;
+}
+.avatarImg {
+  width: 10%;
+}
