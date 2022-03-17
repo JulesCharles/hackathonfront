@@ -2,9 +2,13 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-import App from './App'
+// import Quiz from './screens/Quiz'
 import reportWebVitals from './reportWebVitals'
+<<<<<<< HEAD
 import { Auth0Provider } from "@auth0/auth0-react";
+=======
+import App from './App'
+>>>>>>> dev
 
 ReactDOM.render(
   <React.StrictMode>
