@@ -1,24 +1,23 @@
+import Fonda from './screens/Fonda'
+import Reponse from './components/Reponse'
 // import { Routes, Route } from 'react-router-dom'
-import Header from './components/Header';
-import NavBar from './components/Navbar';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-// import Header from './components/Header'
-import Fonda from './screens/Fonda';
 
-import './App.css';
+import NavBar from './components/Navbar'
+import './App.css'
+import { Routes, Route } from 'react-router-dom'
+
+import './App.css'
 
 function App() {
   return (
     <div className='App'>
       <NavBar />
-      <Header />
-      {/* <Header /> */}
       <Routes>
-        <Route path='/fonda' element={<Fonda />}></Route>
+        <Route path='/Fonda' element={<Fonda />}></Route>
+        <Route path='/Reponse' element={<Reponse />}></Route>
       </Routes>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
