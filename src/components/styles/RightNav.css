@@ -1,0 +1,18 @@
+.navbarWrap {
+  display: flex;
+  align-items: center;
+}
+.avatarImg {
+  width: 10%;
+}
+
+.logo {
+  width: 20%;
+  margin-bottom: 100px;
+}
+
+.linkNavbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
