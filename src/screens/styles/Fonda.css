@@ -1,0 +1,145 @@
+@media (max-width: 768px) {
+  .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    padding-top: 48px;
+  }
+
+  .index1 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index2 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index3 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index4 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index5 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index6 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+
+  .index7 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-right: 55px;
+  }
+
+  .index8 {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 65px;
+    font-size: 1.2rem;
+    padding-left: 26px;
+  }
+
+  .pdf1 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf2 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf3 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf4 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf5 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf6 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf7 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+
+  .pdf8 {
+    position: absolute;
+    padding-left: 226px;
+    color: rgb(77, 89, 239);
+    padding-top: 25px;
+    padding-left: 37px;
+  }
+}
