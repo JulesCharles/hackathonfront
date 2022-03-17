@@ -8,7 +8,7 @@ const StyledBurger = styled.div`
     position: fixed;
     top: ${({ open }) => (open ? '15px' : 'inherit')};
     bottom: ${({ open }) => (open ? 'inherit' : '50px')};
-    right: 20px;
+    right: 24px;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
     z-index:20;
     display:none;
@@ -16,6 +16,7 @@ const StyledBurger = styled.div`
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
+        
     }
     
 div{

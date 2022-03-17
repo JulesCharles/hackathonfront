@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+
+.body {
+  margin-left: 24px;
+}
+
+.bonjour {
+  font-size: 24px;
+  margin-left: 160px;
+  margin-top: -80px;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.barreProgress {
+  height: 60px;
+  width: 150px;
+  margin-left: 160px;
+  margin-top: -10px;
+}
+
+.photoOlivia {
+  border-radius: 200%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+
+.xp {
+  font-size: 10px;
+  margin-left: 160px;
+  margin-top: -20px;
+}
+
+.quizzAccueil {
+  margin-top: 60px;
+  display: inline-block;
+  justify-content: center;
+  font-family: 'Public Sans', sans-serif;
+}
+
+.un {
+  display: inline-block;
+ align-content: center;
+ margin-left: 24px;
+ box-shadow: 5px 5px 5px grey;
+ border-radius: 7%;
+
+}
+.deux {
+  display: inline-block;
+  margin-left: 24px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 7%;
+}
+.trois {
+  display: inline-block;
+  margin-left: 24px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 7%;
+}
+.quatre {
+  display: inline-block;
+  margin-left: 24px;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 7%;
+}
+
+.logoQuiz {
+  height: 59px;
+  width: 67px;
+}
+
+.pquiz {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+
+}
+
+.boxLots {
+  
+  margin-left: 24px;
+  margin-right: 24px;
+  border-radius: 15%;
+}
+
+.titre {
+  font-size: 28px;
+  margin-top: 80px;
+  font-family: 'Public Sans', sans-serif;
+  font-weight: 600;
+  color: #0F1AA4;
+}
+
+.stylo {
+  height: 59px;
+  width: 67px;
+
+  
+}
+
+.textStylo {
+  font-size: 15px;
+  display: inline-block;
+}
+
