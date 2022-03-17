@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom'
-// import Header from './components/Header'
 import Fonda from './screens/Fonda'
+import Reponse from './components/Reponse'
 
 import './App.css'
 
 function App() {
   return (
     <div className='App'>
-      {/* <Header /> */}
       <Routes>
         <Route path='/Fonda' element={<Fonda />}></Route>
+        <Route path='/Reponse' element={<Reponse />}></Route>
       </Routes>
     </div>
   )
