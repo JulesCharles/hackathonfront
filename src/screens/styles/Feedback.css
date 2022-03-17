@@ -1,0 +1,31 @@
+@media (max-width: 768px) {
+  .titleContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .startTextPresentation {
+    /* width: 25
+    display: flex;
+    position: absolute;
+    right: 10%; */
+  }
+
+  .selectContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .descriptionContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
