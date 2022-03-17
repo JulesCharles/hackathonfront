@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import RightNav from './RightNav';
 import styled from 'styled-components';
-import enedis from '../assets/enedis.png';
 
 const StyledBurger = styled.div`
     width: 2rem;
     height: 2rem;
     position: fixed;
-    bottom: 15px;
+    top: ${({ open }) => (open ? '15px' : 'inherit')};
+    bottom: ${({ open }) => (open ? 'inherit' : '50px')};
     right: 20px;
+    transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
     z-index:20;
     display:none;
-    @media (max-width: 768px) {
+    @media (max-width: 845px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;

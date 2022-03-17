@@ -8,6 +8,8 @@ import feedback from '../assets/feedback.png';
 import livre from '../assets/livre.png';
 import home from '../assets/home.png';
 import avatar from '../assets/avatar.png';
+import enedis from '../assets/enedis.png';
+import User from './User';
 
 const Ul = styled.ul`
   list-style: none;
@@ -16,13 +18,13 @@ const Ul = styled.ul`
   li {
     padding: 18px 10px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 845px) {
     flex-flow: column nowrap;
     background-color: #fff;
     position: fixed;
-    transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(170%)')};
+    transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
     transition: transform 0.3s ease-in-out;
-    bottom: 0%;
+    bottom: -1%%;
     left: 0%;
     height: 100%;
     width: 100%;
@@ -38,42 +40,44 @@ const RightNav = ({ open }) => {
   return (
     <Ul open={open}>
       <div className='navbarWrap'>
+        <img className='logo' src={enedis} alt='logo' />
+      </div>
+
+      <div className='linkNavbar'>
         <NavLink to='/'>
-          <li classname='navbarText'>
-            <img classname='navbarImg' src={home} alt='maison' />
+          <li className='navbarText'>
+            <img className='NavbarImg' src={home} alt='maison' />
             Home
           </li>
         </NavLink>
-      </div>
-      <div className='navbarWrap'>
         <NavLink to='/quizz'>
-          <li classname='navbarText'>
-            <img classname='navbarImg' src={de} alt='de' />
+          <li className='navbarText'>
+            <img className='navbarImg' src={de} alt='de' />
             Quizz
           </li>
         </NavLink>
-      </div>
-      <div className='navbarWrap'>
         <NavLink to='/fondamentaux'>
-          <img classname='navbarImg' src={livre} alt='livre' />
-          <li classname='navbarText'>Fondamentaux</li>
+          <li className='navbarText'>
+            <img className='navbarImg' src={livre} alt='livre' />
+            Fondamentaux
+          </li>
         </NavLink>
-      </div>
-      <div className='navbarWrap'>
+
         <NavLink to='/moncompte'>
-          <img classname='navbarImg' src={compte} alt='écrou' />
-          <li classname='navbarText'>Mon compte</li>
+          <li className='navbarText'>
+            <img className='navbarImg' src={compte} alt='écrou' />
+            Mon compte
+          </li>
         </NavLink>
-      </div>
-      <div className='navbarWrap'>
         <NavLink to='/monavis'>
-          <img classname='navbarImg' src={feedback} alt='feedback' />
-          <li classname='navbarText'>Mon avis</li>
+          <li className='navbarText'>
+            <img className='navbarImg' src={feedback} alt='feedback' />
+            Mon avis
+          </li>
         </NavLink>
       </div>
       <div className='avatarWrap'>
-        <img classname='avatarImg' src={avatar} alt='photo' />
-        <p className='nameAvatart'>Olivia Olivier</p>
+        <User />
       </div>
     </Ul>
   );
