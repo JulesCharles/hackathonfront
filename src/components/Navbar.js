@@ -1,5 +1,6 @@
 import React from 'react';
 import Burger from './Burger';
+import './styles/Navbar.css';
 
 const NavBar = () => {
   return (

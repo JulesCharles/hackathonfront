@@ -9,6 +9,8 @@ import livre from '../assets/livre.png';
 import home from '../assets/home.png';
 import avatar from '../assets/avatar.png';
 import enedis from '../assets/enedis.png';
+import deNoir from '../assets/deNoir.png';
+
 import User from './User';
 
 const Ul = styled.ul`
@@ -24,7 +26,7 @@ const Ul = styled.ul`
     position: fixed;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
     transition: transform 0.3s ease-in-out;
-    bottom: -1%%;
+    bottom: -1%;
     left: 0%;
     height: 100%;
     width: 100%;
@@ -41,6 +43,8 @@ const RightNav = ({ open }) => {
     <Ul open={open}>
       <div className='navbarWrap'>
         <img className='logo' src={enedis} alt='logo' />
+
+        <img className='navbarImg' src={deNoir} alt='de' />
       </div>
 
       <div className='linkNavbar'>
@@ -56,19 +60,19 @@ const RightNav = ({ open }) => {
             Quizz
           </li>
         </NavLink>
-        <NavLink to='/fondamentaux'>
+        <NavLink to='/fonda'>
           <li className='navbarText'>
             <img className='navbarImg' src={livre} alt='livre' />
             Fondamentaux
           </li>
         </NavLink>
-
+        {/* 
         <NavLink to='/moncompte'>
           <li className='navbarText'>
             <img className='navbarImg' src={compte} alt='écrou' />
             Mon compte
           </li>
-        </NavLink>
+        </NavLink> */}
         <NavLink to='/monavis'>
           <li className='navbarText'>
             <img className='navbarImg' src={feedback} alt='feedback' />
