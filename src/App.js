@@ -15,7 +15,7 @@ function App() {
       <Header />
       {/* <Header /> */}
       <Routes>
-        <Route path='/Fonda' element={<Fonda />}></Route>
+        <Route path='/fonda' element={<Fonda />}></Route>
       </Routes>
     </div>
   );
