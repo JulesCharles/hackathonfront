@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import RightNav from './RightNav';
-import styled from 'styled-components';
+import React, { useState } from 'react'
+import RightNav from './RightNav'
+import styled from 'styled-components'
+import './styles/Navbar.css'
 
 const StyledBurger = styled.div`
     width: 2rem;
@@ -10,7 +11,7 @@ const StyledBurger = styled.div`
     bottom: ${({ open }) => (open ? 'inherit' : '50px')};
     right: 20px;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
-    z-index:20;
+    z-index: 101;
     display:none;
     @media (max-width: 845px) {
         display: flex;
@@ -37,10 +38,10 @@ div{
     &:nth-child(3) {
         transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')}; 
     }
-`;
+`
 
 const Burger = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   return (
     <>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -49,9 +50,9 @@ const Burger = () => {
         <div />
       </StyledBurger>
       {/* <img className='logoEnedis' src={enedis} alt='logo' /> */}
-      <RightNav open={open} />
+      <RightNav open={open} setOpen={setOpen} />
     </>
-  );
-};
+  )
+}
 
-export default Burger;
+export default Burger

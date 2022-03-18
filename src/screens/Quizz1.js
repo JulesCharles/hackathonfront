@@ -12,7 +12,16 @@ export default function Quizz1(props) {
   const questions = [
     {
       questionText:
-        'Faire un point d’arrêt c’est m’arrêter, reculer et faire le point.',
+        'Attention, dans le quiz suivant certaines images peuvent choquer !',
+      images: 'https://cdn-icons-png.flaticon.com/512/2288/2288859.png',
+      answerOptions: [
+        { answerText: 'Retour', isCorrect: true },
+        { answerText: 'Poursuivre', isCorrect: false },
+      ],
+    },
+    {
+      questionText:
+        'Faut il toujours faire le TOP avant de commencer le chantier ?',
       images: 'https://i.postimg.cc/4ynDGkWS/question-mark-g681f265e0-1920.jpg',
       answerOptions: [
         { answerText: 'Vrai', isCorrect: false },
@@ -20,13 +29,14 @@ export default function Quizz1(props) {
       ],
     },
     {
-      questionText: 'J’utilise les moyens de protection collective',
+      questionText:
+        'Le TOP permet de travailler dans un environnement sécurisé.',
       images:
         'https://i.postimg.cc/RZT6q0fy/depositphotos-38313399-stock-photo-handyman-fell-from-ladder.webp',
       answerOptions: [{ answerText: 'Next Question', isCorrect: false }],
     },
     {
-      questionText: 'Sur chantier, le port du casque est facultatif.',
+      questionText: 'Sur chantier, le port du casque est il facultatif ?.',
       images: 'https://i.postimg.cc/XYGG1r3R/pexels-kindel-media-8488037.jpg',
       answerOptions: [
         { answerText: 'Vrai', isCorrect: true },
@@ -65,7 +75,7 @@ export default function Quizz1(props) {
     },
     {
       questionText:
-        "Téléphone au volant, risque d'accident multiplié ! Utilisez votre kit main-libre ou rapellez votre correspondant à l'arrêt total de votre véhicule ",
+        "Téléphone au volant, multiplie les risques d'accident ! Utilisez votre kit main-libre ou rapellez votre correspondant à l'arrêt total de votre véhicule ",
       images: 'https://i.postimg.cc/T1J8XB58/image.jpg',
       answerOptions: [{ answerText: 'Next Question', isCorrect: false }],
     },
@@ -168,8 +178,8 @@ export default function Quizz1(props) {
         </CardContent>
       </Card> */}
       <div className='globalQuizz'>
-        <img src={logo} alt='deologie' class='imgLogo' />
-        <div className='quizContainer'>
+        <img src={logo} alt='' class='imgLogo' />
+        <div className={`quizContainer ${showScore ? 'setSizeNull' : ''}`}>
           {showScore ? (
             <div className='score-section'>
               {/* You scored {score} out of {questions.length} */}

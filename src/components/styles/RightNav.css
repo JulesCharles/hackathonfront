@@ -7,7 +7,7 @@
 }
 
 .logo {
-  width: 20%;
+  width: 45%;
   margin-bottom: 100px;
 }
 
@@ -15,4 +15,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  align-self: center;
+  padding-bottom: 30%;
+}
+
+.navbarText {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+
+.navbarText > p {
+  padding-left: 18px;
+  font-weight: 600;
 }

@@ -24,11 +24,15 @@ const Ul = styled.ul`
     position: fixed;
     transform: ${({ open }) => (open ? 'translateY(0%)' : 'translateY(90%)')};
     transition: transform 0.3s ease-in-out;
-    bottom: -1%%;
+    bottom: -1%;
     left: 0%;
     height: 100%;
     width: 100%;
     border-radius: 24px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     li {
       color: var(--fontColor);
       font-size: 24px;
@@ -36,7 +40,7 @@ const Ul = styled.ul`
   }
 `
 
-const RightNav = ({ open }) => {
+const RightNav = ({ open, setOpen }) => {
   return (
     <Ul open={open}>
       <div className='navbarWrap'>
@@ -44,35 +48,22 @@ const RightNav = ({ open }) => {
       </div>
 
       <div className='linkNavbar'>
-        <NavLink to='/'>
+        <NavLink to='/' onClick={() => setOpen(!open)}>
           <li className='navbarText'>
             <img className='NavbarImg' src={home} alt='maison' />
-            Home
+            <p>Home</p>
           </li>
         </NavLink>
-        <NavLink to='/quizz'>
+        <NavLink to='/quizz' onClick={() => setOpen(!open)}>
           <li className='navbarText'>
             <img className='navbarImg' src={de} alt='de' />
-            Quizz
+            <p>Quizz</p>
           </li>
         </NavLink>
-        <NavLink to='/fondamentaux'>
+        <NavLink to='/fondamentaux' onClick={() => setOpen(!open)}>
           <li className='navbarText'>
             <img className='navbarImg' src={livre} alt='livre' />
-            Fondamentaux
-          </li>
-        </NavLink>
-        {/* 
-        <NavLink to='/moncompte'>
-          <li className='navbarText'>
-            <img className='navbarImg' src={compte} alt='écrou' />
-            Mon compte
-          </li>
-        </NavLink> */}
-        <NavLink to='/monavis'>
-          <li className='navbarText'>
-            <img className='navbarImg' src={feedback} alt='feedback' />
-            Mon avis
+            <p>Fondamentaux</p>
           </li>
         </NavLink>
       </div>

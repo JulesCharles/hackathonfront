@@ -15,7 +15,7 @@
 .question-text {
   margin: 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   /* margin-bottom: 20%; */
 }
 
@@ -35,6 +35,8 @@
   justify-content: center;
   width: 15%;
   margin: 10px;
+  position: absolute;
+  bottom: 14%;
 }
 
 .buttonQuiz {
@@ -48,8 +50,10 @@
   align-items: center;
   border: 1px solid #234668;
   cursor: pointer;
-  padding: 10px;
+  padding: 23px;
   margin: 10px;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .correct {
@@ -95,6 +99,9 @@ button svg {
   /* bottom: 30%; */
   box-shadow: 0px 5px 5px rgba(194, 194, 194, 0.411);
   margin: 10px;
+  animation: fadeIn ease-in-out 1s forwards;
+  height: 400px;
+  width: 370px;
 }
 
 .globalQuizz {
@@ -105,4 +112,9 @@ button svg {
 .imgLogo {
   width: 200px;
   margin: 20px;
+}
+
+.setSizeNull {
+  height: inherit;
+  width: inherit;
 }

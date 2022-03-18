@@ -49,7 +49,7 @@ const Modal = ({ handleClose, text }) => {
           />
           <Link to='/'>
             <button className='buttonModal' onClick={handleClose}>
-              Acceuil
+              Mon profil
             </button>
           </Link>
         </div>

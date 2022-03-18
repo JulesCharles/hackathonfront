@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './styles/Home.css'
 import quizz from '../assets/quizz.jpeg'
 import fusee from '../assets/fusee.png'
@@ -8,13 +9,19 @@ import bourse from '../assets/bourse.png'
 const Home = () => {
   return (
     <div className='homecontainer'>
-      <div className='title'>Bonjour Olivia !</div>
+      <div className='title'>
+        <p>Bonjour Olivia !</p>
+      </div>
       <div className='jauge'></div>
       <div className='jauge2'></div>
       <div className='points'>4060 pts /6000 pts</div>
-      <img className='logoQuiz' src={quizz} width='200px' alt='' />
+      <Link to='/quizz'>
+        <img className='logoQuiz' src={quizz} width='200px' alt='' />
+      </Link>
       <div className='obj'>
-        <div className='objectifs'>Objectifs :</div>
+        <div className='objectifs'>
+          <p>Objectifs :</p>
+        </div>
         <div className='jauge4'></div>
         <div className='point1'>1060 pts / 2000 pts</div>
         <div className='stylo'>
