@@ -9,7 +9,6 @@
 
   .fondacontainer {
     background-color: white;
-    z-index: 2;
   }
 
   .infos {
@@ -22,56 +21,56 @@
     display: flex;
     position: absolute;
     left: 28%;
-    top: 140px;
+    top: 175px;
   }
 
   .icone2Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 222px;
+    top: 255px;
   }
 
   .icone3Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 298px;
+    top: 340px;
   }
 
   .icone4Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 395px;
+    top: 430px;
   }
 
   .icone5Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 487px;
+    top: 523px;
   }
 
   .icone6Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 575px;
+    top: 610px;
   }
 
   .icone7Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 660px;
+    top: 700px;
   }
 
   .icone8Container {
     display: flex;
     position: absolute;
     left: 28%;
-    top: 730px;
+    top: 770px;
   }
 
   .icone1 {

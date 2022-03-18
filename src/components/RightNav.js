@@ -1,15 +1,15 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
-import './styles/RightNav.css';
-import compte from '../assets/compte.png';
-import de from '../assets/de.png';
-import feedback from '../assets/feedback.png';
-import livre from '../assets/livre.png';
-import home from '../assets/home.png';
-import avatar from '../assets/avatar.png';
-import enedis from '../assets/enedis.png';
-import User from './User';
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
+import './styles/RightNav.css'
+import compte from '../assets/compte.png'
+import de from '../assets/de.png'
+import feedback from '../assets/feedback.png'
+import livre from '../assets/livre.png'
+import home from '../assets/home.png'
+import avatar from '../assets/avatar.png'
+import enedis from '../assets/enedis.png'
+import User from './User'
 
 const Ul = styled.ul`
   list-style: none;
@@ -34,7 +34,7 @@ const Ul = styled.ul`
       font-size: 24px;
     }
   }
-`;
+`
 
 const RightNav = ({ open }) => {
   return (
@@ -62,13 +62,13 @@ const RightNav = ({ open }) => {
             Fondamentaux
           </li>
         </NavLink>
-
+        {/* 
         <NavLink to='/moncompte'>
           <li className='navbarText'>
             <img className='navbarImg' src={compte} alt='écrou' />
             Mon compte
           </li>
-        </NavLink>
+        </NavLink> */}
         <NavLink to='/monavis'>
           <li className='navbarText'>
             <img className='navbarImg' src={feedback} alt='feedback' />
@@ -80,6 +80,6 @@ const RightNav = ({ open }) => {
         <User />
       </div>
     </Ul>
-  );
-};
-export default RightNav;
+  )
+}
+export default RightNav

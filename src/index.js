@@ -2,14 +2,20 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import './index.css'
-// import Quiz from './screens/Quiz'
+import { Auth0Provider } from '@auth0/auth0-react'
 import reportWebVitals from './reportWebVitals'
 import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <Auth0Provider
+        domain='dev-lb3zdv8j.us.auth0.com'
+        clientId='XTMCBFDqZPVMzypH15VE8qYYzY6F0jnA'
+        redirectUri={window.location.origin}
+      >
+        <App />
+      </Auth0Provider>
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')

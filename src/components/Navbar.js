@@ -1,5 +1,5 @@
-import React from 'react';
-import Burger from './Burger';
+import React from 'react'
+import Burger from './Burger'
 
 const NavBar = () => {
   return (
@@ -8,7 +8,7 @@ const NavBar = () => {
         <Burger />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar
